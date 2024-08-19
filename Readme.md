@@ -7,9 +7,8 @@ This project is a simple API developed with Express.js and SQLite for managing a
 - [Installation](#installation)
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
-- [Database Schema](#database-schema)
 - [Error Handling](#error-handling)
-- [License](#license)
+- [Unit Testing](#unit-testing)
 
 ## Installation
 
