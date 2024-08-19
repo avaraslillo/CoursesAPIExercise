@@ -100,5 +100,5 @@ The API includes basic error handling:
 This API includes unit testing for creation and updating of courses. These tests can be executed using the command:
 
 ```bash
-npm start
+npx jest
 ```
