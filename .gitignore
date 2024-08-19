@@ -4,3 +4,4 @@
 .env.*
 ./course-assignment.txt
 *.db
+/db
