@@ -94,3 +94,11 @@ The API includes basic error handling:
 - 404 Not Found: If a requested course is not found.
 - 400 Bad Request: If required fields are missing or invalid in the request body.
 - 500 Internal Server Error: For unexpected errors on the serve
+
+## Unit testing
+
+This API includes unit testing for creation and updating of courses. These tests can be executed using the command:
+
+```bash
+npm start
+```
