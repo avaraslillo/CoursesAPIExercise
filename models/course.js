@@ -11,12 +11,13 @@ Course = sequelize.define('Course', {
     },
     subject:{
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: false,
+        unique: true
     },
     courseNumber:{
-        type: DataTypes.STRING,
-        size: 3,
+        type: DataTypes.STRING(3),
         allowNull: false,
+        unique: true,
         //This is the validation function to only allow 3 digit numbers with leading zeros
         validate: {
             isThreeDigitNumber(value) {
@@ -30,12 +31,7 @@ Course = sequelize.define('Course', {
         type: DataTypes.STRING,
         allowNull: true
     }
-  },{indexes: [
-    {
-      unique: true,
-      fields: ['subject', 'courseNumber']
-    }
-  ]});
+  });
 
 
 

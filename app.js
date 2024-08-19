@@ -6,12 +6,13 @@ const logger = require('morgan');
 const sequelize = require('./config/database');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 const courseRouter = require('./routes/course');
 
 const app = express();
 
-sequelize.sync()
+//Synchronization of database with ORM Sequelize
+
+sequelize.sync({force:true})
   .then(() => {
     console.log('Database synced successfully');
   })
@@ -30,7 +31,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 app.use('/course', courseRouter);
 
 // catch 404 and forward to error handler
