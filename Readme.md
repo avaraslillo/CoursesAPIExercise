@@ -33,7 +33,9 @@ To get started with this project, follow these steps:
     npm install
     ```
 
-4. Start the server. The SQLite database will synchronize automatically with the Sequelize ORM:
+4. Setup a file for an SQLite database    
+
+5. Start the server. The SQLite database will synchronize automatically with the Sequelize ORM:
 
     ```bash
     npm start
